@@ -1,12 +1,28 @@
-# Terraform files to ignore
-.terraform/
+# Terraform files
 *.tfstate
 *.tfstate.*
-crash.log
-
-# Sensitive variable files
-*.tfvars
-*.tfvars.json
-
-# Terraform lock backup (optional)
+.terraform/
 .terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive files
+*.tfvars
+!example.tfvars
+.terraformrc
+terraform.rc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
